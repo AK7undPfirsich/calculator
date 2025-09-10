@@ -1,3 +1,5 @@
+import math
+
 class commands:
     def __init__(self, name, operator, description):
         self.name = name
@@ -12,4 +14,8 @@ subtract = commands("sub", "-", "Subtract the second number from the first!")
 
 multiply = commands("mult", "*", "Multiplies two numbers with each other!")
 
-list_of_commands = [off, add, subtract, multiply]
+power = commands("power", "**", "First Number to the Power of the second")
+
+modulo = commands("mod", "%", "First Number modulo the second")
+
+list_of_commands = [off, add, subtract, multiply, power, modulo]
